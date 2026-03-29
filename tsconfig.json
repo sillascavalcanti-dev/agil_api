@@ -7,13 +7,23 @@
 
         // Environment Settings
         // See also https://aka.ms/tsconfig/module
-        "module": "nodenext",
-        "target": "esnext",
         "types": [],
+        "forceConsistentCasingInFileNames": true,
         // For nodejs:
         // "lib": ["esnext"],
         // "types": ["node"],
         // and npm install -D @types/node
+
+        "target": "ESNext",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "allowImportingTsExtensions": false,
+        "noEmit": false,
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "paths": {
+            "*": ["node_modules/*", "src/*"]
+        },
 
         // Other Outputs
         "sourceMap": true,

@@ -1,2 +1,7 @@
-const mensagem: string = "Projeto TypeScript iniciado! com sucesso";
-console.log(mensagem);
+import { app } from "./app.js";
+
+try {
+    app();
+} catch (error) {
+    console.log(`API error: ${error}`);
+}
